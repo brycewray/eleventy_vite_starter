@@ -141,17 +141,6 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addWatchTarget("./src/assets/css/*.css")
   eleventyConfig.addWatchTarget("./src/**/*.md")
 
-  eleventyConfig.setBrowserSyncConfig({
-    ...eleventyConfig.browserSyncConfig,
-    files: [
-      "src/**/*.js",
-      "src/assets/css/*.css",
-      "src/**/*.md",
-    ],
-    ghostMode: false,
-    // port: 3000, // conflicts with Vite
-  })
-
   eleventyConfig.addPlugin(ErrorOverlay)
 
   eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
