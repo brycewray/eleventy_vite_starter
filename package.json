@@ -1,6 +1,6 @@
 {
-  "name": "eleventy_solo_starter_njk",
-  "description": "",
+  "name": "eleventy_vite_starter",
+  "description": "An Eleventy/Vite starter set based on the home repository for https://www.brycewray.com",
   "private": true,
   "scripts": {
     "clean": "rimraf _site",
