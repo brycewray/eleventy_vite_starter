@@ -14,7 +14,6 @@ This is a starter set for the [Eleventy](https://11ty.dev) [static site generato
 
 ## What’s under the hood
 
-- Build tooling through [Vite](https://vitejs.dev) as explained in [this article](https://www.brycewray.com/posts/2021/07/eleventy-vite-elite).
-- Lazy-loading of some images through use of [lazyload](https://github.com/verlok/vanilla-lazyload).
+- Build processing through [Vite](https://vitejs.dev), borrowing heavily from the [eleventy-with-vite](https://github.com/fpapado/eleventy-with-vite) repo by [Fotis Papadogeorgopoulos](https://github.com/fpapado), as explained in "[Eleventy + Vite = elite](https://www.brycewray.com/posts/2021/07/eleventy-vite-elite)."
 - Responsive images through the [`eleventy-img` plugin](https://www.11ty.dev/docs/plugins/image/) and an `image` shortcode.
 - [PostCSS](https://postcss.org) and [Tailwind CSS](https://tailwindcss.com). As of version 2.1.0, Tailwind includes the still-in-preview **[@tailwindcss/jit](https://github.com/tailwindlabs/tailwindcss-jit) library**; read more about it in [this announcement](https://blog.tailwindcss.com/just-in-time-the-next-generation-of-tailwind-css).
