@@ -1,6 +1,6 @@
-# Eleventy starter set (Nunjucks-based)
+# Eleventy/Vite starter set
 
-This is a starter set for the [Eleventy](https://11ty.dev) [static site generator (SSG)](https://staticgen.com). See the [online demo](https://eleventy-solo-starter-njk.vercel.app/). Of course, there are many **far better** ones on the [Eleventy “Starter Projects” page](https://www.11ty.dev/docs/starter/)!
+This is a starter set for the [Eleventy](https://11ty.dev) [static site generator (SSG)](https://staticgen.com). See the [online demo](https://eleventy-vite-starter.vercel.app/). Of course, there are many **far better** ones on the [Eleventy “Starter Projects” page](https://www.11ty.dev/docs/starter/)!
 
 ## How to use
 
