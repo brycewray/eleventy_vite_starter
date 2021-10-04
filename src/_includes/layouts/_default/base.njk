@@ -20,8 +20,21 @@
       {% viteLegacyScriptTag "vite/legacy-polyfills" %}
       {% viteLegacyScriptTag "src/client/main-legacy.js" %}
     {% else %}
-      <script type="module" src="http://localhost:3000/@vite/client"></script>
-      <script type="module" src="http://localhost:3000/src/client/main.js"></script>
+      <script>
+        function addModule( src ) {
+          var s = document.createElement( 'script' );
+          s.setAttribute( 'src', src );
+          s.setAttribute( 'type', 'module' );
+          document.body.appendChild( s );
+        }
+
+        var currentDomain = window.location.hostname;
+        var viteClient = "http://" + currentDomain + ":3000/@vite/client";
+        var mainScript = "http://" + currentDomain + ":3000/src/client/main.js";
+
+        addModule(viteClient);
+        addModule(mainScript);
+      </script>
     {% endif %}
   </body>
 </html>
