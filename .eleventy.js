@@ -5,6 +5,7 @@ const ErrorOverlay = require('eleventy-plugin-error-overlay')
 const svgContents = require("eleventy-plugin-svg-contents")
 const path = require ('path')
 const Image = require('@11ty/eleventy-img')
+const { createProxyMiddleware } = require("http-proxy-middleware");
 
 const INPUT_DIR = "src"
 const OUTPUT_DIR = "_site"
@@ -154,6 +155,16 @@ module.exports = function(eleventyConfig) {
     }
     return content
   })
+
+  /* BrowserSync Config */
+  eleventyConfig.setBrowserSyncConfig({
+    ...eleventyConfig.browserSyncConfig,
+    middleware: [
+      createProxyMiddleware("**/@fs/**", {
+        target: "http://localhost:3000",
+      })
+    ],
+  });
 
   /* === START, prev/next posts stuff === */
   // https://github.com/11ty/eleventy/issues/529#issuecomment-568257426
