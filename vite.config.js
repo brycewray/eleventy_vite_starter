@@ -14,7 +14,10 @@ export default defineConfig({
     sourcemap: true,
     manifest: true,
     rollupOptions: {
-      input: "/src/client/main.js",
+      input: "src/client/main.js",
     },
+  },
+  server: {
+    host: "0.0.0.0",
   },
 });
