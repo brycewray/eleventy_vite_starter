@@ -6,7 +6,8 @@ module.exports = {
     content: [
       './src/**/*.js',
       './src/**/*.11ty.js',
-      './src/**/*.njk'
+      './src/**/*.njk',
+      './src/**/*.html'
     ],
   },
   darkMode: 'media',
@@ -28,6 +29,11 @@ module.exports = {
         '800': '#000088',
         '900': '#000066',
       },
+    },
+    fontFamily: {
+      'sans': ['Public Sans', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', 'Noto Sans', 'Segoe UI', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'],
+      'serif': ['ui-serif', 'Georgia', 'Cambria', 'Times', 'Times New Roman', 'serif'],
+      'mono': ['ui-monospace', 'SFMono-Regular', 'SF Mono', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', 'monospace']
     },
   },
   variants: {},

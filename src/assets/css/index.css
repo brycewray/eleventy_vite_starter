@@ -1,4 +1,6 @@
 /*! purgecss start ignore */
+/* @import 'fonts_Inter.css'; */
+@import 'fonts_PublicSans.css';
 @import 'nav.css';
 @import 'prismjs.css';
 @import 'tailwindcss/base';
